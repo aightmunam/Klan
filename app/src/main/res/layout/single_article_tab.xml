@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:layout_marginBottom="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="323dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                android:id="@+id/article_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:text="@string/article_heading"
+                style="@style/Base.TextAppearance.AppCompat.Headline5"/>
+
+            <TextView
+                android:id="@+id/article_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/article_description"
+                style="@style/TextAppearance.AppCompat.Body2"/>
+
+            <TextView
+                android:id="@+id/article_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/article_author"
+                style="@style/Base.TextAppearance.AppCompat.Overline"
+                android:textColor="@color/colorAccent"
+                android:layout_marginBottom="5dp"/>
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@android:drawable/star_big_off" />
+
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/article_picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/tool"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
