@@ -7,12 +7,5 @@
     <color name="colorGreyBackground">#3C3C3C</color>
     <color name="colorTextSecondary">#19DAA5</color>
     <color name="white">#FFFFFF</color>
-    <color name="brown">#9F6A1A</color>
-    <color name="dark_blue">#00154F</color>
-    <color name="light_blue">#58B9C6</color>
-    <color name="purple">#491E96</color>
-    <color name="gray">#2E2D2D</color>
-    <color name="light_gray">#B3B2B2</color>
-    <color name="paper">#f2eecb</color>
 
 </resources>

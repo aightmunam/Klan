@@ -14,7 +14,7 @@
     <fragment
         android:id="@+id/nav_new_story"
         android:name="com.example.klanblogger.NewStoryFragment"
-        android:label="@string/menu_readingList"
+        android:label="@string/menu_newStory"
         tools:layout="@layout/fragment_new_story" />
 
     <fragment
@@ -25,13 +25,13 @@
 
     <fragment
         android:id="@+id/nav_stats"
-        android:name="com.example.klanblogger.StatsFragment"
-        android:label="@string/menu_stats"
-        tools:layout="@layout/fragment_stats" />
+        android:name="com.example.klanblogger.BlogFragment"
+        android:label="@string/menu_blog"
+        tools:layout="@layout/fragment_blog" />
 
     <fragment
         android:id="@+id/nav_stories"
         android:name="com.example.klanblogger.StoriesFragment"
-        android:label="@string/menu_readingList"
+        android:label="@string/menu_stories"
         tools:layout="@layout/fragment_stories" />
 </navigation>
