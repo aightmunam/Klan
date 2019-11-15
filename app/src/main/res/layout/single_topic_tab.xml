@@ -11,7 +11,7 @@
         android:id="@+id/topic_name"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        style="@style/Base.TextAppearance.AppCompat.Headline6"
+        style="@style/Base.TextAppearance.AppCompat.Body1."
         android:textColor="@color/colorTextSecondary"
         android:layout_weight="1"
         android:textAlignment="center"

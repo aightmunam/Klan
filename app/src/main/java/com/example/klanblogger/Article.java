@@ -44,4 +44,3 @@ public class Article {
         this.picture = picture;
     }
 }
-it
