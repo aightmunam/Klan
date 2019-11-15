@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">KlanBlogger</string>
+    <string name="app_name">Klan</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Profile name</string>
@@ -15,6 +15,17 @@
     <string name="menu_settings">Settings</string>
     <string name="menu_log">Log out</string>
 
+    <string name="reading_list_archived_title">Archived</string>
+
+    <string name="reading_list_saved_title">Saved</string>
+
+
+    <string name="reading_list_recently_viewed_title">Recently Viewed</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="article_description">Article Description</string>
+    <string name="article_heading">Article Heading</string>
+    <string name="topic_name">Topic Name</string>
+    <string name="article_author">Article Author</string>
 </resources>

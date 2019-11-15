@@ -3,12 +3,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ReadingList.ReadingListFragment">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/reading_list_pager"
+=======
+    android:background="@color/colorPrimary"
     tools:context=".ReadingListFragment">
+>>>>>>> origin/Munam
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/reading_list_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+
+            app:tabIndicatorColor="@color/white"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="@color/light_gray"
+            app:tabIndicatorGravity="bottom"
+            app:tabIndicatorHeight="1dp"
+            android:background="@color/colorPrimaryDark">
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </androidx.viewpager.widget.ViewPager>
+</LinearLayout>

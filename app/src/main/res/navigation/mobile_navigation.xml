@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/nav_reading_list"
-        android:name="com.example.klanblogger.ReadingListFragment"
+        android:name="com.example.klanblogger.ReadingList.ReadingListFragment"
         android:label="@string/menu_readingList"
         tools:layout="@layout/fragment_reading_list" />
 
