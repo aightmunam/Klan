@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">KlanBlogger</string>
+    <string name="app_name">Klan</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Profile name</string>
@@ -17,4 +17,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="article_description">Article Description</string>
+    <string name="article_heading">Article Heading</string>
+    <string name="topic_name">Topic Name</string>
+    <string name="article_author">Article Author</string>
 </resources>

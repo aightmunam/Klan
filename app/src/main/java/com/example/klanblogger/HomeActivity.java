@@ -6,21 +6,16 @@ import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
 import androidx.core.view.GravityCompat;
-import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-
 import com.google.android.material.navigation.NavigationView;
-
 import androidx.drawerlayout.widget.DrawerLayout;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
 import android.view.Menu;
+import android.view.View;
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener  {
 
@@ -32,7 +27,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_home);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -46,7 +40,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().add(R.id.nav_host_fragment, new HomeFragment()).commit();
+            getSupportFragmentManager().beginTransaction().add(R.id.nav_host_fragment, new HomeFragment()).addToBackStack("Home").commit();
             navigationView.setCheckedItem(R.id.nav_home);
         }
     }
@@ -61,7 +55,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, new ReadingListFragment()).commit();
                 break;
             case R.id.nav_new_story:
-                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, new NewStoryFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, new NewStoryFragment()).addToBackStack("New Story").commit();
                 break;
             case R.id.nav_stats:
                 getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, new StatsFragment()).commit();
