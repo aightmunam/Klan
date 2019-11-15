@@ -30,9 +30,9 @@ public class ReadingListFragment extends Fragment {
     }
     private void setupViewPager(ViewPager viewPager) {
         ReadingListAdapter adapter = new ReadingListAdapter(getChildFragmentManager());
-        adapter.addFragment(new ArchivedFragment(), "Saved");
+        adapter.addFragment(new SavedFragment(), "Saved");
         adapter.addFragment(new ArchivedFragment(), "Archived");
-        adapter.addFragment(new ArchivedFragment(), "Recently Viewed");
+        adapter.addFragment(new RecentlyViewed(), "Recently Viewed");
         viewPager.setAdapter(adapter);
     }
 

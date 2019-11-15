@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ReadingList.ReadingListFragment">
 
@@ -15,7 +16,7 @@
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/reading_list_tab_layout"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="wrap_content"
 
             app:tabIndicatorColor="@color/white"
             app:tabSelectedTextColor="@color/white"

@@ -10,10 +10,6 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 import com.example.klanblogger.ReadingList.ReadingListFragment;
 import com.google.android.material.navigation.NavigationView;
 
