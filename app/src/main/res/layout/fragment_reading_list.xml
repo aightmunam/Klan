@@ -20,10 +20,10 @@
 
             app:tabIndicatorColor="@color/white"
             app:tabSelectedTextColor="@color/white"
-            app:tabTextColor="@color/light_gray"
+            app:tabTextColor="@color/colorText"
             app:tabIndicatorGravity="bottom"
             app:tabIndicatorHeight="1dp"
-            android:background="@color/colorPrimaryDark">
+            android:background="@color/colorPrimary">
 
         </com.google.android.material.tabs.TabLayout>
 
