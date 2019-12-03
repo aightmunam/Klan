@@ -34,4 +34,9 @@
         android:name="com.example.klanblogger.StoriesFragment"
         android:label="@string/menu_stories"
         tools:layout="@layout/fragment_stories" />
+    <activity
+        android:id="@+id/nav_logout"
+        android:name="com.example.klanblogger.SignInActivity"
+        android:label="@string/log_out"
+        tools:layout="@layout/activity_sign_in" />
 </navigation>

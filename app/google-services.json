@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "618442401177",
+    "firebase_url": "https://klan-e8c41.firebaseio.com",
+    "project_id": "klan-e8c41",
+    "storage_bucket": "klan-e8c41.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618442401177:android:ff39b9c5c80e0d1b381f08",
+        "android_client_info": {
+          "package_name": "com.example.klanblogger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "618442401177-jn9qln7n1u25ajslmgl26o3a5n6r5plu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.klanblogger",
+            "certificate_hash": "e7a027bf6ed06d00e9248328f4cdda9f058d6e1b"
+          }
+        },
+        {
+          "client_id": "618442401177-dka4gn6lbe3gpqj2jn6vk3vg2icc31pk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbLD0QBlUIEHZ1ewwvuB8h685HQF7l044"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "618442401177-dka4gn6lbe3gpqj2jn6vk3vg2icc31pk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

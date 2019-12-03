@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    tools:context=".NewStoryFragment">
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <net.dankito.richtexteditor.android.RichTextEditor
+        android:id="@+id/editor"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="0dp"
+        android:layout_weight="10" />
 
-</FrameLayout>
+    <net.dankito.richtexteditor.android.toolbar.GroupedCommandsEditorToolbar
+        android:id="@+id/editorToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/colorPrimary" />
+
+</LinearLayout>

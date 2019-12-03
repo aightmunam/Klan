@@ -5,6 +5,27 @@ public class Article {
     private String description;
     private String picture;
     private String author;
+    private String Topic;
+    private String articleContentHtml;
+
+    public String getTopic() {
+        return Topic;
+    }
+
+    public Article() {
+    }
+
+    public void setTopic(String topic) {
+        Topic = topic;
+    }
+
+    public String getArticleContentHtml() {
+        return articleContentHtml;
+    }
+
+    public void setArticleContentHtml(String articleContentHtml) {
+        this.articleContentHtml = articleContentHtml;
+    }
 
     public String getAuthor() {
         return author;

@@ -6,10 +6,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.Query;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +32,8 @@ public class HomeFragment extends Fragment {
     private RecyclerView articleRecyclerView;
     private TopicAdapter topicAdapter;
     private ArticleAdapter articleAdapter;
+    FirebaseFirestore databaseReference;
+    FirebaseAuth auth;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -62,18 +74,38 @@ public class HomeFragment extends Fragment {
         return temp;
     }
 
-    private List<Article> getDummyArticles(){
-        List<Article> temp = new ArrayList<Article>();
+    private List<Article> getDummyArticles() {
+        final List<Article> temp = new ArrayList<Article>();
         Article t;
         String name;
         String author;
+
+        auth = FirebaseAuth.getInstance();
+        databaseReference = FirebaseFirestore.getInstance();
+        CollectionReference collectionReference;
+        collectionReference = databaseReference.collection("articles");
+        Query userDetailQuery = collectionReference.whereEqualTo("author", auth.getCurrentUser().getUid());
+        userDetailQuery.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                if (task.isSuccessful()) {
+                    for (QueryDocumentSnapshot document : task.getResult()) {
+                        Article article = document.toObject(Article.class);
+                        temp.add(article);
+                    }
+                }
+            }
+        });
+
+
         for (int i = 0; i < 25; i++) {
             name = "Article " + (i + 1);
-            author = "Author " + (i+1);
+            author = "Author " + (i + 1);
             t = new Article(name, "Some dummy description", author);
             temp.add(t);
         }
         return temp;
+
     }
 
 }
